@@ -15,7 +15,7 @@ task "build:app", "build electron app", ->
 	invoke "build:plugin"
 	invoke "build:coffee"
 
-	exec "electron-packager ./src RSync --platform=win32 --arch ia32 --asar --version 1.3.3", ->
+	exec "electron-packager ./src RSync --platform=win32 --arch ia32 --asar --electronVersion 1.3.3", ->
 		console.log "Build complete"
 
 task "build:coffee", "build the coffee files into javascript", ->
